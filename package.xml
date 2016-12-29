@@ -5,7 +5,7 @@
 		<packagename languagecode="en"><![CDATA[Display New thread-button in thread]]></packagename>
 		<packagedescription languagecode="de"><![CDATA[Dieses Plugin bringt den "Neues Thema"-Button in die Themen-Ansicht zurück.]]></packagedescription>
 		<packagedescription languagecode="en"><![CDATA[Display "new thread" button within the view thread page.]]></packagedescription>
-		<version>1.0.0 RC 3</version>
+		<version>1.0.0 RC 4</version>
 		<date>2016-12-29</date>
 	</packageinformation>
 	
@@ -21,13 +21,14 @@
 	
 	<excludedpackages>
 		<excludedpackage version="3.1.0 Alpha 1">com.woltlab.wcf</excludedpackage>
+		<excludedpackage version="1.0.0 Alpha 1">de.softcreatr.wsf.ntb</excludedpackage>
 	</excludedpackages>
 	
 	<instructions type="install">
 		<instruction type="templateListener">templateListener.xml</instruction>
 	</instructions>
 
-	<instructions type="update" fromversion="1.0.0 RC *">
+	<instructions type="update" fromversion="*">
 		<instruction type="templateListener">templateListener.xml</instruction>
 	</instructions>
 </package>
