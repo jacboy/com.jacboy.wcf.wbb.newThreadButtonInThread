@@ -4,8 +4,8 @@
 			<templatelistener name="newThreadButtonInThread">
 				<environment>user</environment>
 				<templatename>headIncludeJavaScript</templatename>
-				<eventname>javascriptIni</eventname>
-				<templatecode><![CDATA[{if !$templateName|empty && $templateName == 'thread' && $board|empty && $board->canStartThread()}$('.jsThreadInlineEditorContainer').prepend($('<li><a href="{link application='wbb' controller='ThreadAdd' id=$thread->getBoard()->boardID}{/link}" title="{lang}wbb.thread.add{/lang}" class="button"><span class="icon icon16 fa-plus"></span> <span>{lang}wbb.thread.button.add{/lang}</span></a></li>'));
+				<eventname>javascriptInit</eventname>
+				<templatecode><![CDATA[{if !$templateName|empty && $templateName == 'thread' && !$board|empty && $board->canStartThread()}$('.jsThreadInlineEditorContainer').prepend($('<li><a href="{link application='wbb' controller='ThreadAdd' id=$thread->getBoard()->boardID}{/link}" title="{lang}wbb.thread.add{/lang}" class="button"><span class="icon icon16 fa-plus"></span> <span>{lang}wbb.thread.button.add{/lang}</span></a></li>'));
 {/if}]]></templatecode>
 			</templatelistener>
 		<!-- /user -->
