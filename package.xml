@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<package name="com.jacboy.wcf.wbb.newThreadButtonInThread" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/package.xsd">
+	<packageinformation>
+		<packagename languagecode="de"><![CDATA[Neues Thema-Button in Thread anzeigen]]></packagename>
+		<packagename languagecode="en"><![CDATA[Display New thread-button in thread]]></packagename>
+		<packagedescription languagecode="de"><![CDATA[Dieses Plugin bringt den "Neues Thema"-Button in die Themen-Ansicht zurück.]]></packagedescription>
+		<packagedescription languagecode="en"><![CDATA[Display "new thread" button within the view thread page.]]></packagedescription>
+		<version>1.0.0 RC 2</version>
+		<date>2016-12-29</date>
+	</packageinformation>
+	
+	<authorinformation>
+		<author><![CDATA[Jakob Licina]]></author>
+		<authorurl><![CDATA[https://jakoblicina.com]]></authorurl>
+	</authorinformation>
+	
+	<requiredpackages>
+		<requiredpackage minversion="3.0.0 RC 2">com.woltlab.wcf</requiredpackage>
+		<requiredpackage minversion="5.0.0 RC 2">com.woltlab.wbb</requiredpackage>
+	</requiredpackages>
+	
+	<excludedpackages>
+		<excludedpackage version="3.1.0 Alpha 1">com.woltlab.wcf</excludedpackage>
+	</excludedpackages>
+	
+	<instructions type="install">
+		<instruction type="templateListener">templateListener.xml</instruction>
+	</instructions>
+</package>

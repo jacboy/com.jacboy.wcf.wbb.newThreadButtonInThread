@@ -1,0 +1,12 @@
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/templatelistener.xsd">
+	<import>
+		<!-- user -->
+			<templatelistener name="newThreadButtonInThread">
+				<environment>user</environment>
+				<templatename>thread</templatename>
+				<eventname>contentHeaderNavigation</eventname>
+				<templatecode><![CDATA[{if $board->canStartThread()}<li><a href="{link application='wbb' controller='ThreadAdd' id=$thread->getBoard()->boardID}{/link}" title="{lang}wbb.thread.add{/lang}" class="button"><span class="icon icon16 fa-plus"></span> <span>{lang}wbb.thread.button.add{/lang}</span></a></li>{/if}]]></templatecode>
+			</templatelistener>
+		<!-- /user -->
+	</import>
+</data>
