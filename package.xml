@@ -5,7 +5,7 @@
 		<packagename languagecode="en"><![CDATA[Display New thread-button in thread]]></packagename>
 		<packagedescription languagecode="de"><![CDATA[Dieses Plugin bringt den "Neues Thema"-Button in die Themen-Ansicht zurück.]]></packagedescription>
 		<packagedescription languagecode="en"><![CDATA[Display "new thread" button within the view thread page.]]></packagedescription>
-		<version>1.0.0 RC 2</version>
+		<version>1.0.0 RC 3</version>
 		<date>2016-12-29</date>
 	</packageinformation>
 	
@@ -24,6 +24,10 @@
 	</excludedpackages>
 	
 	<instructions type="install">
+		<instruction type="templateListener">templateListener.xml</instruction>
+	</instructions>
+
+	<instructions type="update" fromversion="1.0.0 RC *">
 		<instruction type="templateListener">templateListener.xml</instruction>
 	</instructions>
 </package>
