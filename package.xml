@@ -21,6 +21,7 @@
 	
 	<excludedpackages>
 		<excludedpackage version="1.0.0 Alpha 1">de.softcreatr.wsf.ntb</excludedpackage>
+		<excludedpackage version="3.1.0 Alpha 1">com.woltlab.wcf</excludedpackage>
 	</excludedpackages>
 	
 	<instructions type="install">
